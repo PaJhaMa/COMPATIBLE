@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajhama.svnitnme.svnitandme.GJ_SEC">
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="GAJJAR HMC WELCOMES YOU"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/HS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignTop="@+id/JHS"
+            app:srcCompat="@mipmap/hs"
+            tools:ignore="UnknownId" />
+
+        <ImageButton
+            android:id="@+id/JHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/WELFARE"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="33dp"
+            app:srcCompat="@mipmap/jhs"
+            tools:ignore="UnknownId" />
+
+        <ImageButton
+            android:id="@+id/MESS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignTop="@+id/JHS"
+            app:srcCompat="@mipmap/mess"
+            tools:ignore="UnknownId" />
+
+        <ImageButton
+            android:id="@+id/SPORTS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/HS"
+            android:layout_below="@+id/HS"
+            android:layout_marginTop="47dp"
+            app:srcCompat="@mipmap/sports"
+            tools:ignore="UnknownId" />
+
+        <ImageButton
+            android:id="@+id/CULTURAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/MESS"
+            android:layout_alignTop="@+id/SPORTS"
+            app:srcCompat="@mipmap/cultural"
+            tools:ignore="UnknownId" />
+
+        <ImageButton
+            android:id="@+id/ENVIRONMENT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/JHS"
+            android:layout_alignTop="@+id/CULTURAL"
+            app:srcCompat="@mipmap/environment"
+            tools:ignore="UnknownId" />
+
+        <ImageButton
+            android:id="@+id/WELFARE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TECHNICAL"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@mipmap/welfare" />
+
+        <ImageButton
+            android:id="@+id/TECHNICAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/MESS"
+            android:layout_marginBottom="12dp"
+            app:srcCompat="@mipmap/technical"
+            tools:ignore="UnknownId" />
+
+        <ImageButton
+            android:id="@+id/MAGAZINE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/SPORTS"
+            android:layout_alignTop="@+id/WELFARE"
+            app:srcCompat="@mipmap/magzine"
+            tools:ignore="UnknownId" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@mipmap/gajjar" />
+
+
+
+</RelativeLayout>
