@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajhama.svnitnme.svnitandme.VIEW_COMPLAIN">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/TDCMP"
+        android:text="WELCOME MR." />
+
+    <TextView
+        android:id="@+id/ttlcmpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/welcome"
+        android:layout_alignStart="@+id/welcome"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/tdcmpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ttlcmpl"
+        android:layout_alignStart="@+id/ttlcmpl"
+        android:layout_below="@+id/ttlcmpl"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:id="@+id/cpmlid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TDCMP"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:text="COMPLAIN ID" />
+
+    <TextView
+        android:id="@+id/cpid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cpmlid"
+        android:layout_alignBottom="@+id/cpmlid"
+        android:layout_alignEnd="@+id/tdcmpl"
+        android:layout_alignStart="@+id/editText4" />
+
+    <TextView
+        android:id="@+id/cmpldt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cpmlid"
+        android:layout_below="@+id/cpmlid"
+        android:layout_marginTop="32dp"
+        android:text="COMPLAIN DATE" />
+
+    <TextView
+        android:id="@+id/cpdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cpid"
+        android:layout_alignStart="@+id/cpid"
+        android:layout_alignTop="@+id/cmpldt" />
+
+    <TextView
+        android:id="@+id/cmpltm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cmpldt"
+        android:layout_below="@+id/cmpldt"
+        android:layout_marginTop="35dp"
+        android:text="COMPLAIN TIME" />
+
+    <TextView
+        android:id="@+id/cptm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cpdt"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_alignTop="@+id/cmpltm" />
+
+    <TextView
+        android:id="@+id/cpmldes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cpmlid"
+        android:layout_alignTop="@+id/editText4"
+        android:text="DESCRIPTION" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_toEndOf="@+id/TLCMPL"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView20"
+        android:layout_alignEnd="@+id/cpmldes"
+        android:text="SORTED" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView20"
+        android:layout_alignEnd="@+id/welcome"
+        android:text="NEXT" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="DEVELOPED AND CREATED BY PaJhaMa" />
+
+    <TextView
+        android:id="@+id/TLCMPL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cpmlid"
+        android:layout_alignTop="@+id/ttlcmpl"
+        android:text="TOTAL COMPLAINS" />
+
+    <TextView
+        android:id="@+id/TDCMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TLCMPL"
+        android:layout_alignTop="@+id/tdcmpl"
+        android:text="TODAY'S CPMPLAINS" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cmpltm"
+        android:layout_below="@+id/cmpltm"
+        android:layout_marginTop="26dp"
+        android:text="NAME" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/cptm"
+        android:layout_alignStart="@+id/cptm" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="18dp"
+        android:text="ROOM NO" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tdcmpl"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignTop="@+id/textView8" />
+
+</RelativeLayout>

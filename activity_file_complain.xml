@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajhama.svnitnme.svnitandme.file_complain">
+
+    <TextView
+        android:id="@+id/HSTLWLCM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/NMEHSTL"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:id="@+id/HSTLNME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/HSTLWLCM"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="63dp"
+        android:text="HOSTEL NAME" />
+
+    <TextView
+        android:id="@+id/NMEHSTL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/DESCRIP"
+        android:layout_alignTop="@+id/HSTLNME"
+        android:layout_marginEnd="57dp" />
+
+    <TextView
+        android:id="@+id/CMPLFLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/HSTLNME"
+        android:layout_below="@+id/HSTLNME"
+        android:layout_marginTop="45dp"
+        android:text="COMPLAIN FIELD" />
+
+    <TextView
+        android:id="@+id/FIELDCMPL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/NMEHSTL"
+        android:layout_alignStart="@+id/DESCRIP"
+        android:layout_alignTop="@+id/CMPLFLD" />
+
+    <TextView
+        android:id="@+id/DETAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SUBMIT"
+        android:layout_alignStart="@+id/CMPLFLD"
+        android:layout_marginBottom="112dp"
+        android:text="DESCRIPTION" />
+
+    <EditText
+        android:id="@+id/DESCRIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/DETAIL"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/FILENO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/DETAIL"
+        android:layout_below="@+id/DESCRIP"
+        android:layout_marginTop="13dp"
+        android:text="COMPLAIN ID" />
+
+    <TextView
+        android:id="@+id/CMPLNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/FILENO"
+        android:layout_alignBottom="@+id/FILENO"
+        android:layout_alignEnd="@+id/DESCRIP"
+        android:layout_alignStart="@+id/DESCRIP" />
+
+    <Button
+        android:id="@+id/SUBMIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="SUBMIT" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CMPLFLD"
+        android:layout_below="@+id/CMPLFLD"
+        android:layout_marginTop="21dp"
+        android:text="YOUR NAME" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/DETAIL"
+        android:layout_alignStart="@+id/DETAIL"
+        android:layout_marginBottom="24dp"
+        android:text="ROOM NO" />
+
+    <EditText
+        android:id="@+id/urnme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView25"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignEnd="@+id/urrm"
+        android:layout_alignStart="@+id/urrm" />
+
+    <EditText
+        android:id="@+id/urrm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView26"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignEnd="@+id/FIELDCMPL"
+        android:layout_alignStart="@+id/DESCRIP" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/urrm"
+        android:layout_alignParentBottom="true"
+        android:text="DEVELOPED AND CREATED BY PaJhaMa" />
+</RelativeLayout>
