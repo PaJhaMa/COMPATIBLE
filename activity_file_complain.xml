@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background12"
     tools:context="com.pajhama.svnitnme.svnitandme.file_complain">
 
     <TextView
@@ -24,16 +25,20 @@
         android:layout_below="@+id/HSTLWLCM"
         android:layout_marginStart="17dp"
         android:layout_marginTop="63dp"
-        android:text="HOSTEL NAME" />
+        android:text="HOSTEL NAME"
+        android:textAllCaps="false"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
 
-    <TextView
+    <EditText
         android:id="@+id/NMEHSTL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/DESCRIP"
-        android:layout_alignTop="@+id/HSTLNME"
-        android:layout_marginEnd="57dp" />
+        android:layout_alignBaseline="@+id/HSTLNME"
+        android:layout_alignBottom="@+id/HSTLNME"
+        android:layout_alignEnd="@+id/DESCRIP"
+        android:layout_alignStart="@+id/DESCRIP" />
 
     <TextView
         android:id="@+id/CMPLFLD"
@@ -42,15 +47,17 @@
         android:layout_alignStart="@+id/HSTLNME"
         android:layout_below="@+id/HSTLNME"
         android:layout_marginTop="45dp"
-        android:text="COMPLAIN FIELD" />
+        android:text="COMPLAIN FIELD"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
 
-    <TextView
+    <EditText
         android:id="@+id/FIELDCMPL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/CMPLFLD"
         android:layout_alignEnd="@+id/NMEHSTL"
-        android:layout_alignStart="@+id/DESCRIP"
-        android:layout_alignTop="@+id/CMPLFLD" />
+        android:layout_alignStart="@+id/NMEHSTL" />
 
     <TextView
         android:id="@+id/DETAIL"
@@ -59,7 +66,9 @@
         android:layout_above="@+id/SUBMIT"
         android:layout_alignStart="@+id/CMPLFLD"
         android:layout_marginBottom="112dp"
-        android:text="DESCRIPTION" />
+        android:text="DESCRIPTION"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/DESCRIP"
@@ -78,9 +87,11 @@
         android:layout_alignStart="@+id/DETAIL"
         android:layout_below="@+id/DESCRIP"
         android:layout_marginTop="13dp"
-        android:text="COMPLAIN ID" />
+        android:text="COMPLAIN ID"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
 
-    <TextView
+    <EditText
         android:id="@+id/CMPLNO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -96,7 +107,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:text="SUBMIT" />
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+        android:text="SUBMIT"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <TextView
         android:id="@+id/textView25"
@@ -105,7 +118,9 @@
         android:layout_alignStart="@+id/CMPLFLD"
         android:layout_below="@+id/CMPLFLD"
         android:layout_marginTop="21dp"
-        android:text="YOUR NAME" />
+        android:text="YOUR NAME"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView26"
@@ -114,7 +129,9 @@
         android:layout_above="@+id/DETAIL"
         android:layout_alignStart="@+id/DETAIL"
         android:layout_marginBottom="24dp"
-        android:text="ROOM NO" />
+        android:text="ROOM NO"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/urnme"
@@ -138,7 +155,16 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/urrm"
         android:layout_alignParentBottom="true"
-        android:text="DEVELOPED AND CREATED BY PaJhaMa" />
+        android:layout_alignStart="@+id/FILENO"
+        android:text="DEVELOPED AND CREATED BY PaJhaMa"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/BACKCOMPLAIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="BACK" />
 </RelativeLayout>

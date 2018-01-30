@@ -27,7 +27,8 @@
             android:layout_alignStart="@+id/textView2"
             android:layout_alignTop="@+id/JHS"
             app:srcCompat="@mipmap/hs"
-            tools:ignore="UnknownId" />
+            tools:ignore="UnknownId"
+            android:onClick="data1"/>
 
         <ImageButton
             android:id="@+id/JHS"
@@ -118,10 +119,9 @@
         style="@android:style/Widget.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/TECHNICAL"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/MAGAZINE"
-        android:ems="10"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/BACKGJ"
+        android:ems="16"
         android:inputType="textPersonName"
         android:text="DEVELOPED AND CREATED BY PaJhaMa"
         android:textAlignment="center"
@@ -139,7 +139,7 @@
         android:layout_marginEnd="16dp"
         android:text="HS"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
 
     <TextView
@@ -150,7 +150,7 @@
         android:layout_centerHorizontal="true"
         android:text="JHS"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
 
     <TextView
@@ -162,7 +162,7 @@
         android:layout_marginStart="13dp"
         android:text="MESS"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
 
 
@@ -174,7 +174,7 @@
         android:layout_below="@+id/SPORTS"
         android:text="SPORTS"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
 
     <TextView
@@ -185,7 +185,7 @@
         android:layout_centerHorizontal="true"
         android:text="ENVIRONMENT"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
 
     <TextView
@@ -196,7 +196,7 @@
         android:layout_below="@+id/CULTURAL"
         android:text="CULTURAL"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
 
     <TextView
@@ -207,7 +207,7 @@
         android:layout_below="@+id/MAGAZINE"
         android:text="MAGAZINE"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
 
     <TextView
@@ -218,7 +218,7 @@
         android:layout_below="@+id/WELFARE"
         android:text="WELFARE"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
 
     <TextView
@@ -229,8 +229,16 @@
         android:layout_alignStart="@+id/TECHNICAL"
         android:text="TECHNICAL"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/BACKGJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_alignParentBottom="true"
+        android:text="BACK" />
 
 
 </RelativeLayout>

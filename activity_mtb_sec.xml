@@ -124,9 +124,9 @@
             style="@android:style/Widget.AutoCompleteTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/TECHNICAL"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/MAGAZINE"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/TECHNICAL"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="DEVELOPED AND CREATED BY PaJhaMa"
@@ -239,6 +239,14 @@
             android:textAlignment="center"
             android:textColor="?android:attr/colorButtonNormal"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/BACKMTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView11"
+            android:text="BACK" />
 </RelativeLayout>
 
 
