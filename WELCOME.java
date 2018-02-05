@@ -2,6 +2,7 @@ package com.pajhama.svnitnme.svnitandme;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 public class WELCOME extends AppCompatActivity {
 
@@ -17,11 +19,20 @@ public class WELCOME extends AppCompatActivity {
     private ImageView kursv;
     private ImageView gjcmpl;
     private ImageView mtbcmpl;
+    private VideoView SLIDESHOW;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
+
+        SLIDESHOW=(VideoView)findViewById(R.id.SLIDESHOW);
+        String uri="android.resource://com.pajhama.svnitnme.svnitandme/"+R.raw.svnitvideo;
+        Uri uri2= Uri.parse(uri);
+        SLIDESHOW.setVideoURI(uri2);
+        SLIDESHOW.requestFocus();
+        SLIDESHOW.start();
 
 
         HMCLOGIN=(Button)findViewById(R.id.HMCLOGIN);

@@ -1,246 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context="com.pajhama.svnitnme.svnitandme.clubs">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/ScrollView01"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/background2"
-        tools:context="com.pajhama.svnitnme.svnitandme.clubs"
-        tools:layout_editor_absoluteY="53dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="2dp">
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Clubs"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-            tools:layout_editor_absoluteX="201dp"
-            tools:layout_editor_absoluteY="0dp">
+        <TextView
+            android:id="@+id/radioButton21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView6"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="CHRD (The Centre of Human Resource Development)"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/radioButton22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton21"
+            android:layout_below="@+id/radioButton21"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="ACM (Association for Computing Machinery)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/radioButton21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="25dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="CHRD (The Centre of Human Resource Development)"
-                android:textAlignment="viewStart"
-                android:textAllCaps="false"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton22"
+            android:layout_below="@+id/radioButton22"
+            android:layout_marginTop="18dp"
+            android:text="DRISHTI"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/radioButton22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton21"
-                android:layout_below="@+id/radioButton21"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="ACM (Association for Computing Machinery)"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton23"
+            android:layout_below="@+id/radioButton23"
+            android:layout_marginTop="23dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="LAC (Literary Affairs Committee)"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/radioButton23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton22"
-                android:layout_below="@+id/radioButton22"
-                android:layout_marginTop="18dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="DRISHTI"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton24"
+            android:layout_below="@+id/radioButton24"
+            android:layout_marginTop="13dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="CEV (Cutting Edge Visionaries)"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/radioButton24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton23"
-                android:layout_below="@+id/radioButton23"
-                android:layout_marginTop="23dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="LAC (Literary Affairs Committee)"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton25"
+            android:layout_below="@+id/radioButton25"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="RENESA"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/radioButton25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton24"
-                android:layout_below="@+id/radioButton24"
-                android:layout_marginTop="13dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="CEV (Cutting Edge Visionaries)"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton26"
+            android:layout_below="@+id/radioButton26"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Google Developer Group"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/radioButton26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton25"
-                android:layout_below="@+id/radioButton25"
-                android:layout_marginTop="18dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="RENESA"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton27"
+            android:layout_below="@+id/radioButton27"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="NCC (National Cadet Cops)"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/radioButton27"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton26"
-                android:layout_below="@+id/radioButton26"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="Google Developer Group"
-                android:textAlignment="viewStart"
-                android:textAllCaps="false"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton28"
+            android:layout_below="@+id/radioButton28"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="JOYFEST"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/radioButton28"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton27"
-                android:layout_below="@+id/radioButton27"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="NCC (National Cadet Cops)"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton29"
+            android:layout_below="@+id/radioButton29"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:text="IETE(INSTITUTE OF ELECTRONICS AND TELECOMMUNICATION ENGINEERTING)"
+            android:textColor="@color/colorPrimary" />
 
-            <Button
-                android:id="@+id/radioButton29"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton28"
-                android:layout_below="@+id/radioButton28"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="JOYFEST"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton30"
+            android:layout_below="@+id/radioButton30"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:text="EES(ELECTRICAL ENGINEERING SOCIETY)"
+            android:textColor="@color/colorPrimary" />
 
-            <Button
-                android:id="@+id/radioButton30"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton29"
-                android:layout_below="@+id/radioButton29"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="IETE(INSTITUTE OF ELECTRONICS AND TELECOMMUNICATION ENGINEERTING)"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton31"
+            android:layout_below="@+id/radioButton31"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="CES(CIVIL ENGINEERING SOCIETY)"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
 
-            <Button
-                android:id="@+id/radioButton31"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton30"
-                android:layout_below="@+id/radioButton30"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="EES(ELECTRICAL ENGINEERING SOCIETY)"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/radioButton33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton32"
+            android:layout_below="@+id/radioButton32"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:text="ChES(CHEMICAL ENGINEERING SOCIETY)"
+            android:textColor="@color/colorPrimary" />
 
-            <Button
-                android:id="@+id/radioButton32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton31"
-                android:layout_below="@+id/radioButton31"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="CES(CIVIL ENGINEERING SOCIETY)"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/radioButton33"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/radioButton32"
-                android:layout_below="@+id/radioButton32"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="ChES(CHEMICAL ENGINEERING SOCIETY)"
-                android:textAlignment="viewStart"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="Clubs"
-                android:textAllCaps="true"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="147dp"
-                tools:layout_editor_absoluteY="7dp" />
+        <Button
+            android:id="@+id/BACKFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/radioButton21"
+            android:layout_below="@+id/radioButton26"
+            android:text="BACK"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+            android:textColor="@android:color/white" />
 
 
-        </RelativeLayout>
-    </ScrollView>
-
-    <Button
-        android:id="@+id/BACKCLUB"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:text="BACK"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="447dp"
-        tools:ignore="MissingConstraints" />
-
-
-
-
-</android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</ScrollView>

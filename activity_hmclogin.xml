@@ -10,7 +10,6 @@
     <RelativeLayout
         android:layout_width="382dp"
         android:layout_height="513dp"
-        android:background="@drawable/background7"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -52,8 +51,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginBottom="12dp"
-            android:text="BACK" />
+            android:text="BACK"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+            android:textColor="@android:color/white"/>
 
 
     </RelativeLayout>

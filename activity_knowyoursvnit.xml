@@ -25,18 +25,18 @@
             android:id="@+id/hstldtl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/clbdtl"
             android:layout_below="@+id/textView2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="19dp"
+            android:layout_marginTop="16dp"
             app:srcCompat="@drawable/hostels" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView4"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="97dp"
             android:fontFamily="sans-serif-smallcaps"
             android:lineSpacingExtra="14sp"
             android:text="HOSTEL DETAILS"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/hstldtl"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="33dp"
             android:fontFamily="sans-serif-smallcaps"
             android:text="Know about various Clubs"
             android:textAlignment="center"
@@ -67,8 +67,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_toStartOf="@+id/button3"
             android:cropToPadding="false"
             android:elevation="0dp"
             app:srcCompat="@drawable/clubs" />
@@ -91,8 +91,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_below="@+id/clbdtl"
-            android:text="BACK" />
+            android:layout_alignTop="@+id/clbdtl"
+            android:layout_marginTop="83dp"
+            android:text="BACK"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+            android:textColor="@android:color/white"/>
 
     </RelativeLayout>
 

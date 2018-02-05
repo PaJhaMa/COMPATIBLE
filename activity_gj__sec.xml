@@ -27,8 +27,7 @@
             android:layout_alignStart="@+id/textView2"
             android:layout_alignTop="@+id/JHS"
             app:srcCompat="@mipmap/hs"
-            tools:ignore="UnknownId"
-            android:onClick="data1"/>
+            tools:ignore="UnknownId" />
 
         <ImageButton
             android:id="@+id/JHS"
@@ -49,15 +48,15 @@
             app:srcCompat="@mipmap/mess"
             tools:ignore="UnknownId" />
 
-        <ImageButton
-            android:id="@+id/SPORTS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/HS"
-            android:layout_below="@+id/HS"
-            android:layout_marginTop="47dp"
-            app:srcCompat="@mipmap/sports"
-            tools:ignore="UnknownId" />
+    <ImageButton
+        android:id="@+id/SPORTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/HS"
+        android:layout_centerVertical="true"
+        app:srcCompat="@mipmap/sports"
+        android:layout_marginTop="40dp"
+        tools:ignore="UnknownId" />
 
         <ImageButton
             android:id="@+id/CULTURAL"
@@ -92,7 +91,8 @@
         android:layout_alignStart="@+id/CULTURAL"
         android:layout_alignTop="@+id/WELFARE"
         app:srcCompat="@mipmap/technical"
-        tools:ignore="UnknownId" />
+        tools:ignore="UnknownId"
+        />
 
     <ImageButton
         android:id="@+id/MAGAZINE"
@@ -100,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/SPORTS"
         android:layout_below="@+id/SPORTS"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         app:srcCompat="@mipmap/magzine"
         tools:ignore="UnknownId" />
 
@@ -119,14 +119,15 @@
         style="@android:style/Widget.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView13"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/BACKGJ"
-        android:ems="16"
+        android:ems="10"
         android:inputType="textPersonName"
         android:text="DEVELOPED AND CREATED BY PaJhaMa"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:textStyle="italic" />
 
     <TextView
@@ -139,7 +140,7 @@
         android:layout_marginEnd="16dp"
         android:text="HS"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="?android:attr/colorButtonNormal"
         android:textStyle="bold" />
 
     <TextView
@@ -150,7 +151,7 @@
         android:layout_centerHorizontal="true"
         android:text="JHS"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="?android:attr/colorButtonNormal"
         android:textStyle="bold" />
 
     <TextView
@@ -162,7 +163,7 @@
         android:layout_marginStart="13dp"
         android:text="MESS"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="?android:attr/colorButtonNormal"
         android:textStyle="bold" />
 
 
@@ -174,7 +175,7 @@
         android:layout_below="@+id/SPORTS"
         android:text="SPORTS"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="?android:attr/colorButtonNormal"
         android:textStyle="bold" />
 
     <TextView
@@ -185,7 +186,7 @@
         android:layout_centerHorizontal="true"
         android:text="ENVIRONMENT"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="?android:attr/colorButtonNormal"
         android:textStyle="bold" />
 
     <TextView
@@ -196,7 +197,7 @@
         android:layout_below="@+id/CULTURAL"
         android:text="CULTURAL"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="?android:attr/colorButtonNormal"
         android:textStyle="bold" />
 
     <TextView
@@ -207,7 +208,7 @@
         android:layout_below="@+id/MAGAZINE"
         android:text="MAGAZINE"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="?android:attr/colorButtonNormal"
         android:textStyle="bold" />
 
     <TextView
@@ -218,27 +219,29 @@
         android:layout_below="@+id/WELFARE"
         android:text="WELFARE"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="?android:attr/colorButtonNormal"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView16"
-        android:layout_alignStart="@+id/TECHNICAL"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_below="@+id/TECHNICAL"
         android:text="TECHNICAL"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="?android:attr/colorButtonNormal"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/BACKGJ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView17"
         android:layout_alignParentBottom="true"
-        android:text="BACK" />
+        android:layout_alignParentEnd="true"
+        android:text="BACK"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+        android:textColor="@android:color/white"/>
 
 
 </RelativeLayout>
